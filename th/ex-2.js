@@ -61,5 +61,16 @@ const employeeInfo = [
   },
 ];
 
+function filterByDepartment(array){
+  return department = department
+}
+
+function addBonusForSelectedDepartment(array,bonus,department){
+    let filteredArray = array.filter(employee => employee.department === department)
+    let adjustedSalary = filteredArray.map(employee => employee.salary + bonus)
+    return adjustedSalary.reduce((acc,curr)=>acc+curr,0)
+}
+
 console.log(addBonusForSelectedDepartment(employeeInfo, 5000, "HR")); // 69000
 console.log(addBonusForSelectedDepartment(employeeInfo, 1000, "Operations")); // 67000
+
