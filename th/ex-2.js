@@ -61,9 +61,6 @@ const employeeInfo = [
   },
 ];
 
-function filterByDepartment(array){
-  return department = department
-}
 
 function addBonusForSelectedDepartment(array,bonus,department){
     let filteredArray = array.filter(employee => employee.department === department)
